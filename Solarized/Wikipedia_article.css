@@ -1,0 +1,77 @@
+@-moz-document regexp("https?://(en|simple).wikipedia.org/wiki/.*") {
+  div#footer[role="contentinfo"],
+  div#mw-head-base.noprint,
+  div#mw-page-base.noprint,
+  div#mw-navigation,
+  div#siteSub {
+    display: none;
+  }
+  div#content {
+    margin-left: 0 !important;
+  }
+  #toc,
+  body.mediawiki,
+  div#content.mw-body,
+  table.ambox,
+  table.wikitable,
+  .catlinks,
+  .infobox,
+  .toccolours,
+  code {
+    background-color: #073642 !important;
+    color: #839496;
+  }
+  div#content #firstHeading,
+  div#content h1,
+  div#content h2,
+  div#content h3,
+  div#content h4,
+  div#content h5,
+  div#content h6 {
+    background-color: #073642;
+    color: #839496;
+  }
+  table.wikitable > tr > th,
+  table.wikitable > * > tr > th,
+  table.wikitable th[scope="col"] {
+    background-color: #073642;
+    color: #839496;
+  }
+  a.new,
+  div.thumbinner {
+    background-color: #073642;
+    color: #839496;
+  }
+  .mwe-math-fallback-png-inline.tex,
+  img.tex {
+    background-color: #fff;
+    color: #000;
+    padding: 0.5em;
+  }
+  .infobox,
+  .infobox th {
+    background-color: #073642 !important;
+  }
+  #bodyContent,
+  .mw-body-content {
+    font-size: 1em;
+  }
+  a {
+    color: #a6e22e;
+  }
+  a:visited {
+    color: #aaf;
+  }
+  body {
+    font-family: "Ubuntu";
+  }
+  div#content #firstHeading,
+  div#content h1,
+  div#content h2,
+  div#content h3,
+  div#content h4,
+  div#content h5,
+  div#content h6 {
+    font-family: "Ubuntu";
+  }
+}
