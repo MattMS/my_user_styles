@@ -1,6 +1,9 @@
 # My user styles
 
-CSS files I have created for Stylish.
+[CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+files I have created, for use with
+[Stylish](https://en.wikipedia.org/wiki/Stylish),
+to simplify sites I frequently visit.
 
 
 ## Getting started
