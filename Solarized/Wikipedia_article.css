@@ -1,4 +1,5 @@
 @-moz-document regexp("https?://(en|simple).wikipedia.org/wiki/.*") {
+  div: #ccc ontent;
   div#footer[role="contentinfo"],
   div#mw-head-base.noprint,
   div#mw-page-base.noprint,
@@ -8,6 +9,13 @@
   }
   div#content {
     margin-left: 0 !important;
+  }
+  .mw-body {
+    border-style: none;
+  }
+  body.mediawiki {
+    margin: 0 auto;
+    max-width: 48em;
   }
   #toc,
   body.mediawiki,
