@@ -22,8 +22,10 @@
   div#content.mw-body,
   table.ambox,
   table.wikitable,
+  table.vertical-navbox,
   .catlinks,
   .infobox,
+  .NavHead,
   .toccolours,
   code {
     background-color: #073642 !important;
