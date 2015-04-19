@@ -1,0 +1,28 @@
+{
+  "name": "my_user_styles",
+  "version": "0.1.0",
+  "description": "Customise pages with additional CSS.",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "stylus Solarized/Wikipedia_article.styl",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MattMS/my_user_styles.git"
+  },
+  "keywords": [
+    "CSS",
+    "Stylish",
+    "Stylus"
+  ],
+  "author": "Matt McKellar-Spence",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MattMS/my_user_styles/issues"
+  },
+  "homepage": "https://github.com/MattMS/my_user_styles",
+  "dependencies": {
+    "stylus": "^0.50.0"
+  }
+}
