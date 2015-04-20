@@ -13,21 +13,8 @@
 	div#siteSub
 		display none
 
-
-	div#content
-		margin-left 0 !important
-
-	.mw-body
-		border-style none
-	
-	body.mediawiki
-		margin 0 auto
-		max-width 48em
-
-	div#content
-	#toc
-	body.mediawiki
-	div#content.mw-body
+	div#content.mw-body[role="main"]
+	div#toc.toc
 	table.ambox
 	table.wikitable
 	table.vertical-navbox
@@ -36,35 +23,47 @@
 	.NavHead
 	.toccolours
 	code
-		background-color base02 !important
+		background-color transparent
+		color inherit
+
+	body.mediawiki
+		background-color base02
 		color base0
+		font-family Ubuntu
+		margin 0 auto
+		max-width 48em
 
+	div#content.mw-body[role="main"]
+		border-style none
+		margin-left 0
 
-	div#content
-		#firstHeading
-		h1
+		h1#firstHeading.firstHeading
 		h2
 		h3
 		h4
 		h5
 		h6
-			background-color base02
-			color base0
+			background-color transparent
+			color inherit
+			font-family inherit
 
+	a
+		color #a6e22e
+
+	a:visited
+		color #aaf
 
 	table.wikitable
 		> tr > th
 		> * > tr > th
 		th[scope="col"]
-			background-color base02
-			color base0
-
+			background-color transparent
+			color inherit
 
 	a.new
 	div.thumbinner
-		background-color base02
-		color base0
-
+		background-color transparent
+		color inherit
 
 	.mwe-math-fallback-png-inline.tex
 	img.tex
@@ -72,35 +71,10 @@
 		color #000
 		padding 0.5em
 
-
 	.infobox
 	.infobox th
-		background-color base02 !important
-
+		background-color transparent
 
 	#bodyContent
 	.mw-body-content
 		font-size 1em
-
-
-	a
-		color #a6e22e
-
-
-	a:visited
-		color #aaf
-
-
-	body
-		font-family Ubuntu
-
-
-	div#content
-		#firstHeading
-		h1
-		h2
-		h3
-		h4
-		h5
-		h6
-			font-family Ubuntu

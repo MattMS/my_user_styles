@@ -1,5 +1,4 @@
 @-moz-document regexp("https?://(en|simple).wikipedia.org/wiki/.*") {
-  div: #ccc ontent;
   div#footer[role="contentinfo"],
   div#mw-head-base.noprint,
   div#mw-page-base.noprint,
@@ -7,19 +6,8 @@
   div#siteSub {
     display: none;
   }
-  div#content {
-    margin-left: 0 !important;
-  }
-  .mw-body {
-    border-style: none;
-  }
-  body.mediawiki {
-    margin: 0 auto;
-    max-width: 48em;
-  }
-  #toc,
-  body.mediawiki,
-  div#content.mw-body,
+  div#content.mw-body[role="main"],
+  div#toc.toc,
   table.ambox,
   table.wikitable,
   table.vertical-navbox,
@@ -28,29 +16,46 @@
   .NavHead,
   .toccolours,
   code {
-    background-color: #073642 !important;
-    color: #839496;
+    background-color: transparent;
+    color: inherit;
   }
-  div#content #firstHeading,
-  div#content h1,
-  div#content h2,
-  div#content h3,
-  div#content h4,
-  div#content h5,
-  div#content h6 {
+  body.mediawiki {
     background-color: #073642;
     color: #839496;
+    font-family: "Ubuntu";
+    margin: 0 auto;
+    max-width: 48em;
+  }
+  div#content.mw-body[role="main"] {
+    border-style: none;
+    margin-left: 0;
+  }
+  div#content.mw-body[role="main"] h1#firstHeading.firstHeading,
+  div#content.mw-body[role="main"] h2,
+  div#content.mw-body[role="main"] h3,
+  div#content.mw-body[role="main"] h4,
+  div#content.mw-body[role="main"] h5,
+  div#content.mw-body[role="main"] h6 {
+    background-color: transparent;
+    color: inherit;
+    font-family: inherit;
+  }
+  a {
+    color: #a6e22e;
+  }
+  a:visited {
+    color: #aaf;
   }
   table.wikitable > tr > th,
   table.wikitable > * > tr > th,
   table.wikitable th[scope="col"] {
-    background-color: #073642;
-    color: #839496;
+    background-color: transparent;
+    color: inherit;
   }
   a.new,
   div.thumbinner {
-    background-color: #073642;
-    color: #839496;
+    background-color: transparent;
+    color: inherit;
   }
   .mwe-math-fallback-png-inline.tex,
   img.tex {
@@ -60,28 +65,10 @@
   }
   .infobox,
   .infobox th {
-    background-color: #073642 !important;
+    background-color: transparent;
   }
   #bodyContent,
   .mw-body-content {
     font-size: 1em;
-  }
-  a {
-    color: #a6e22e;
-  }
-  a:visited {
-    color: #aaf;
-  }
-  body {
-    font-family: "Ubuntu";
-  }
-  div#content #firstHeading,
-  div#content h1,
-  div#content h2,
-  div#content h3,
-  div#content h4,
-  div#content h5,
-  div#content h6 {
-    font-family: "Ubuntu";
   }
 }
